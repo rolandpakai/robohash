@@ -1,7 +1,12 @@
+import { Robo } from '../../App';
 import Card from '../card/card.component';
 import './card-list.styles.css';
 
-const CardList = ({ set }) => {
+type CardListProps = {
+  set: Robo[]
+}
+ 
+const CardList = ({ set }: CardListProps) => {
   return (
     <div className="card-list">
         {
